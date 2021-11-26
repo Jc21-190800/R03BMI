@@ -20,16 +20,41 @@ namespace R03BMI
         {
             var height = heighit.Text;
             var waight = weighit.Text;
+       
             try
             {
                 double h = double.Parse(height);
                 double w = double.Parse(waight);
+                double BM;
+                double BMI;
                 if (h > 10)
                 {
                     h = h / 100;
+                }else if (w > 1000)
+                {
+                    w = w/1000
                 }
-
-                heighit.Text = "身長" + h + "," + "体重" + w + "の人のBMIは" + "";
+                BM=h*h;
+                BMI = w/BM;
+                if (BMI < 18.5)
+                {
+                    result.Text="低体重(痩せ)";
+                }else if (BMI < 25.0)
+                {
+                    result.Text="普通体重";
+                }else if (BMI < 30.0)
+                {
+                    result.Text="肥満 (1度)";
+                }else if (BMI < 35.0)
+                {
+                    result.Text="肥満 (2度)";
+                }else if (BMI < 40.0)
+                {
+                    result.Text="肥満 (3度)";
+                }else if (BMI >= 40.0)
+                {
+                    result.Text="肥満 (4度)";
+                }
 
 
             }
