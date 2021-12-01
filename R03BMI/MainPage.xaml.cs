@@ -36,24 +36,28 @@ namespace R03BMI
                 }
                 BM=h*h;
                 BMI = w/BM;
-                if (BMI < 18.5)
+                double BMI2 = Console.WriteLine(Math.Round(BMI, 1, MidpointRounding.AwayFromZero));   
+
+   
+
+                if (BMI2 < 18.5)
                 {
-                    result.Text="低体重(痩せ)";
-                }else if (BMI < 25.0)
+                    result.Text="低体重(痩せ)"+"でBMIは"+ BMI2;
+                }else if (BMI2 < 25.0)
                 {
-                    result.Text="普通体重";
-                }else if (BMI < 30.0)
+                    result.Text="普通体重"+"でBMIは"+ BMI2;
+                }else if (BMI2 < 30.0)
                 {
-                    result.Text="肥満 (1度)";
-                }else if (BMI < 35.0)
+                    result.Text="肥満 (1度)"+"でBMIは"+ BMI2;
+                }else if (BMI2 < 35.0)
                 {
-                    result.Text="肥満 (2度)";
-                }else if (BMI < 40.0)
+                    result.Text="肥満 (2度)"+"でBMIは"+ BMI2;
+                }else if (BMI2 < 40.0)
                 {
-                    result.Text="肥満 (3度)";
-                }else if (BMI >= 40.0)
+                    result.Text="肥満 (3度)"+"でBMIは"+ BMI2;
+                }else if (BMI2 >= 40.0)
                 {
-                    result.Text="肥満 (4度)";
+                    result.Text="肥満 (4度)"+"でBMIは"+ BMI2;
                 }
 
 
