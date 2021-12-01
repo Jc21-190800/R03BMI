@@ -36,7 +36,7 @@ namespace R03BMI
                 }
                 BM=h*h;
                 BMI = w/BM;
-                double BMI2 = Console.WriteLine(Math.Round(BMI, 1, MidpointRounding.AwayFromZero));   
+                double BMI2 = Math.Round(BMI, 1, MidpointRounding.AwayFromZero);   
 
    
 
