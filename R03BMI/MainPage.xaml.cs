@@ -32,7 +32,7 @@ namespace R03BMI
                     h = h / 100;
                 }else if (w > 1000)
                 {
-                    w = w/1000;
+                   　 w = w/1000;
                 }
                 BM=h*h;
                 BMI = w/BM;
